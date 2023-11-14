@@ -1,5 +1,4 @@
 import random
-import pyperclip
 
 symbol = 0
 lower = 0
@@ -7,6 +6,27 @@ upper = 0
 number = 0
 count = 0
 password = []
+pyperclip_installed = False
+
+# pyperclip check. if exception, say copy feature is not available 
+try:
+    import pyperclip
+    pyperclip_installed = True
+except ImportError:    
+    print("pyperclip module is not installed. Copy feature is not available. Please install pyperclip module using pip install pyperclip")
+
+def copy_print():        
+    if pyperclip_installed == True:
+        copyconf = input("Do you want to copy the password to your clipboard? (Press enter for yes): ")
+        copyconf = 'y' if copyconf == '' or copyconf.lower == 'y' else copyconf
+        if copyconf == 'y':
+            pyperclip.copy(''.join(password))
+            print("Password copied to clipboard!")
+        else:
+            print("Password: " + ''.join(password))
+    else:
+        print("Password: " + ''.join(password))
+
 
 length = input("Hey, welcome. How many character do you want in your password? (press enter for 8): ")
 length = 8 if length == '' else int(length)
@@ -51,14 +71,7 @@ while count < length:
             elif r == 2:
                 password.append(chr(random.randint(91, 97)))
 
-        
-copyconf = input("Do you want to copy the password to your clipboard? (Press enter for yes): ")
-copyconf = 'y' if copyconf == '' or copyconf.lower == 'y' else copyconf
-if copyconf == 'y':
-    pyperclip.copy(''.join(password))
-    print("Password copied to clipboard!")
-else:
-    print("Password: " + ''.join(password))
+copy_print()
 
 print(f"\n password length: {length}, uppercase: {upper}, lowercase: {lower}, numbers: {number}, symbols: {symbol}")
 
