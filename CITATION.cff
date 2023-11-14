@@ -4,12 +4,14 @@
 cff-version: 1.2.0
 title: randpass
 message: >-
-  citation cff created on 14Nov. Happy birthday to my beloved sister <3
+  citation cff created on 14Nov. Happy birthday to my
+  beloved sister!
 type: software
 authors:
   - given-names: Abdul Hakeem
-    family-names: Putra Porfiriko
+    family-names: Porfiriko
     email: abdulhakeemputraporfiriko@mail.ugm.ac.id
+    name-particle: Putra
     affiliation: Universitas Gadjah Mada
 repository-code: 'https://github.com/putraporfiriko/randpass/'
 url: 'https://porfiriko.live'
