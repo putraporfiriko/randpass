@@ -1,0 +1,21 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: randpass
+message: >-
+  citation cff created on 14Nov. Happy birthday to my
+  beloved sister!
+type: software
+authors:
+  - given-names: Abdul Hakeem
+    family-names: Putra Porfiriko
+    email: abdulhakeemputraporfiriko@mail.ugm.ac.id
+    affiliation: Universitas Gadjah Mada
+repository-code: 'https://github.com/putraporfiriko/randpass/'
+url: 'https://porfiriko.live'
+keywords:
+  - password-generator
+  - python
+  - password
+date-released: '2023-11-14'
