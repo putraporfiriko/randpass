@@ -15,19 +15,6 @@ try:
 except ImportError:    
     print("pyperclip module is not installed. Copy feature is not available. Please install pyperclip module using pip install pyperclip")
 
-def copy_print():        
-    if pyperclip_installed == True:
-        copyconf = input("Do you want to copy the password to your clipboard? (Press enter for yes): ")
-        copyconf = 'y' if copyconf == '' or copyconf.lower == 'y' else copyconf
-        if copyconf == 'y':
-            pyperclip.copy(''.join(password))
-            print("Password copied to clipboard!")
-        else:
-            print("Password: " + ''.join(password))
-    else:
-        print("Password: " + ''.join(password))
-
-
 length = input("Hey, welcome. How many character do you want in your password? (press enter for 8): ")
 length = 8 if length == '' else int(length)
 
@@ -42,6 +29,7 @@ numbers = 'y' if numbers == '' or numbers.lower == 'y' else numbers
 
 symbols = input("Do you want symbols in your password? (Press enter for yes): ")
 symbols = 'y' if symbols == '' or symbols.lower == 'y' else symbols
+
 
 while count < length:
     rand = random.randint(0, 3)
@@ -61,7 +49,7 @@ while count < length:
             password.append(chr(random.randint(48, 58)))
             count += 1
     elif rand == 3:
-        if symbols != 'y':
+        if symbols == 'y':
             r = random.randint(0, 2)
             symbol += 1
             if r == 0:
@@ -70,8 +58,18 @@ while count < length:
                 password.append(chr(random.randint(123, 126)))
             elif r == 2:
                 password.append(chr(random.randint(91, 97)))
+            count += 1
 
-copy_print()
+if pyperclip_installed == True:
+    copyconf = input("Do you want to copy the password to your clipboard? (Press enter for yes): ")
+    copyconf = 'y' if copyconf == '' or copyconf.lower == 'y' else copyconf
+    if copyconf == 'y':
+        pyperclip.copy(''.join(password))
+        print("Password copied to clipboard!")
+    else:
+        print("Password: " + ''.join(password))
+else:
+    print("Password: " + ''.join(password))
 
 print(f"\n password length: {length}, uppercase: {upper}, lowercase: {lower}, numbers: {number}, symbols: {symbol}")
 
