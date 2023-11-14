@@ -14,3 +14,9 @@ One of the most important steps in maintaining online security is with having a 
 3. Run the `RandPass.py` file (`python RandPass.py`)
 4. The program will ask for the requested password characteristics.
 5. The generated password will be able to be copied to the clipboard if you have the required modules installed.
+
+## References:
+https://github.com/pbssubhash/PyPassGen
+
+
+###### This program is created to complete the "Computer Programming" course for the Teknologi Rekayasa Internet major at Universitas Gadjah Mada.
