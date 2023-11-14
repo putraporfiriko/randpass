@@ -1,6 +1,6 @@
 # RandPass: A Python-based Password Generator
 
-[![id](https://img.shields.io/badge/README.MD-ID-green.svg)](https://github.com/putraporfiriko/randpass/blob/main/README-id.id.md "Bahasa Indonesia?")
+[![id](https://img.shields.io/badge/README.MD-ID-green.svg)](https://github.com/putraporfiriko/randpass/blob/main/README.id.md "Bahasa Indonesia?")
 
 One of the most important steps in maintaining online security is with having a secure password. Though we as humans cannot create a long string of random characters at will, a computer could help us with that. 
 
