@@ -30,6 +30,9 @@ numbers = 'y' if numbers == '' or numbers.lower == 'y' else numbers
 symbols = input("Do you want symbols in your password? (Press enter for yes): ")
 symbols = 'y' if symbols == '' or symbols.lower == 'y' else symbols
 
+if uppercase == 'n' and lowercase == 'n' and numbers == 'n' and symbols == 'n':
+    print("You need to have atleast one character type in your password. Please try again.")
+    exit()
 
 while count < length:
     rand = random.randint(0, 3)
