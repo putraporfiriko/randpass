@@ -1,6 +1,6 @@
 # RandPass: Penghasil Kata Sandi Berbasis Python
 
-[![en](https://img.shields.io/badge/README.MD-EN-green.svg)](https://github.com/putraporfiriko/randpass/blob/main/README-id.id.md "English?")
+[![en](https://img.shields.io/badge/README.MD-🇺🇸-green.svg)](https://github.com/putraporfiriko/randpass/blob/main/README-id.id.md "English?")
 
 Salah satu langkah yang paling penting dalam menjaga keamanan online adalah dengan memiliki kata sandi yang aman. Meskipun kita sebagai manusia tidak dapat membuat string karakter acak yang panjang dengan sendirinya, komputer dapat membantu kita dengan itu.
 
